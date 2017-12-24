@@ -1,0 +1,2 @@
+# installation_scripts
+linux下各个软件的一键安装脚本集合
