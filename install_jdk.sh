@@ -5,7 +5,7 @@
 cd /opt
 
 
-if [ $1 == "" ]; then
+if [ "$1" == "" ]; then
 	JAVA_HOME="/opt/jdk"
 else
 	JAVA_HOME="$1"
@@ -31,7 +31,7 @@ export JAVA_HOME="$JAVA_HOME"
 export JRE_HOME="$JAVA_HOME/jre"
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
 export PATH=${JAVA_HOME}/bin:$PATH" >> /etc/profile
-`
+
 source /etc/profile
 
 echo "JDK 安装成功，安装目录：$JAVA_HOME，JDK版本：`java -version`"
