@@ -5,7 +5,7 @@
 cd /opt
 
 
-if [ "$1" == "" ]; then
+if [ "$1" = "" ]; then
 	JAVA_HOME="/opt/jdk"
 else
 	JAVA_HOME="$1"
