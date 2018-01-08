@@ -23,7 +23,7 @@ ln -s apache-maven-3.5.2 maven
 echo -e "\n
 #maven config
 export MAVEN_HOME="${MAVEN_HOME}"
-export PATH=${MAVEN_HOME}/bin:$PATH" >> /etc/profile
+export PATH=$PATH:${MAVEN_HOME}/bin" >> /etc/profile
 
 
 source /etc/profile
