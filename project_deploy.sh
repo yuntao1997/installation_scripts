@@ -15,4 +15,4 @@ export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
 cd /develop/job-crawler/
 git pull
 
-nohup mvn spring-boot:run -Dmaven.test.skip=true -Dspring.profiles.active=prod  &
+nohup mvn spring-boot:run -Dmaven.test.skip=true -Drun.profiles=prod -Duser.timezone=GMT+08  &
