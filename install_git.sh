@@ -22,6 +22,7 @@ yum -y install unzip
 #echo -e "\n export PATH=$PATH:/usr/local/asciidoc-8.6.9/bin/" >> /etc/profile
 
 #安装依赖
+yum -y install gcc
 yum -y install openssl-devel curl-devel expat-devel gettext-devel zlib-devel
 yum -y install perl-devel
 yum -y install libxslt xmlto
