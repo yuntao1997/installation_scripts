@@ -1,0 +1,13 @@
+
+#更改每个用户的时区
+tzselect
+echo -e "\n
+export TZ='Asia/Shanghai'
+" >> ~/.profile
+
+
+#要更改 Linux 系统整个系统范围的时区可以使用如下命令
+sudo rm -f /etc/localtime
+sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+
