@@ -12,18 +12,19 @@ else
 
 fi
 
-if [ ! -f "/opt/jdk-8u151-linux-x64.tar.gz" ]; then
+if [ ! -f "/opt/jdk-8u162-linux-x64.tar.gz" ]; then
 	echo 'jdk 安装包不存在，准备下载'
-	wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-linux-x64.tar.gz
-
-	tar -zxvf  jdk-8u151-linux-x64.tar.gz
+	#wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u162-b12/0da788060d494f5095bf8624735fa2f1/jdk-8u162-linux-x64.tar.gz
+	curl -OL  "http://download.oracle.com/otn-pub/java/jdk/8u162-b12/0da788060d494f5095bf8624735fa2f1/jdk-8u162-linux-x64.tar.gz" -H "Cookie: oraclelicense=accept-securebackup-cookie"  -H "Connection: keep-alive" 
+	tar -zxvf  jdk-8u162-linux-x64.tar.gz
 else
 	echo 'jdk 安装包已存在，准备执行解压操作.....'
+	tar -zxvf  jdk-8u162-linux-x64.tar.gz
 fi
 
 
 rm -rf jdk
-ln -s jdk1.8.0_151 jdk
+ln -s jdk1.8.0_162 jdk
 
 echo -e "\n
 #jdk config
