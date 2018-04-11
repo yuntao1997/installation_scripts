@@ -13,6 +13,10 @@ dataDir=/var/lib/zookeeper
 clientPort=2181
 " > zoo.cfg
 
+export ZOOKEEPER_HOME=`pwd`/zookeeper-3.4.9
+export PATH=$ZOOKEEPER_HOME/bin:$PATH
+export PATH
+
 #启动zookeeper
 #bin/zkServer.sh start zoo.cfg
 
