@@ -4,7 +4,7 @@ yum remove git
 
 
 #下载最新版git
-curl -O https://www.kernel.org/pub/software/scm/git/git-2.9.5.tar.gz
+wget https://www.kernel.org/pub/software/scm/git/git-2.9.5.tar.gz
 
 #解压
 tar -zxvf git-2.9.5.tar.gz
