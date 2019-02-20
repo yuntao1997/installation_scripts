@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VERSION = "3.6.0"
+VERSION="3.6.0"
 FILE_NAME="apache-maven-${VERSION}-bin.tar.gz"
 MAVEN_HOME="/opt/maven"
 
